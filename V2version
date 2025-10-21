@@ -182,7 +182,7 @@ end)
 
 MainTab:AddLabel("Important:").TextSize = 22
 
-local antiKnockbackSwitch = MainTab:AddSwitch("Anti Fling", function(bool)
+local antiKnockbackSwitch = MainTab:AddSwitch("Anti KB", function(bool)
     if bool then
         local playerName = game.Players.LocalPlayer.Name
         local character = game.Workspace:FindFirstChild(playerName)
@@ -261,7 +261,7 @@ local blockedFrames = {
     "goodKarmaFrame"
 }
 
-local frameSwitch = MainTab:AddSwitch("Hide All Frames", function(bool)
+local frameSwitch = MainTab:AddSwitch("Background Cleaner", function(bool)
     if bool then
         -- Frames ausblenden
         for _, name in ipairs(blockedFrames) do
@@ -878,7 +878,7 @@ local function updatePlayerList()
     return game.Players:GetPlayers()
 end
 
-local specdropdown = KillingTab:AddDropdown("Choose Player", function(text)
+local specdropdown = KillingTab:AddDropdown("Player Select", function(text)
     for _, player in ipairs(updatePlayerList()) do
         local optionText = player.DisplayName .. " | " .. player.Name
         if text == optionText then
@@ -2239,10 +2239,10 @@ end)
 
 
 infoTab:Show()
-infoTab:AddLabel("made by Henne").TextSize = 20
-infoTab:AddLabel("Official Discord: discord.gg/silencev1").TextSize = 20
+infoTab:AddLabel("made by Spectra").TextSize = 20
+infoTab:AddLabel("Official Luxury Script").TextSize = 20
 infoTab:AddButton("Copy Discord Invite", function()
-    local link = "https://discord.gg/9eFf93Kg8D"
+    local link = "https://discord.gg/jWXxHMWDmD"
     if setclipboard then
         setclipboard(link)
         game.StarterGui:SetCore("SendNotification", {
@@ -2260,6 +2260,6 @@ infoTab:AddButton("Copy Discord Invite", function()
 end)
 
 infoTab:AddLabel("")
-local wLabel = infoTab:AddLabel("Silence Public [V.1.1.1]")
+local wLabel = infoTab:AddLabel("Luxury [V2]")
 wLabel.TextSize = 30
 wLabel.Font = Enum.Font.Arcade
