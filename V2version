@@ -1,7 +1,7 @@
 local Players = game:GetService("Players")
 local whitelisted_HWIDs = {
     ["620a359fdf83da9fe755e76a58caaeeaacc20db1deefce6e2b5d8b3261d0efb1"] = true,
-    ["8d744d05ec55e8986a87819942f2de749f1a01fc23abe1461f2d88d21a38040f"] = true,
+    ["b3bdf5d109ea03434422bbe5185740682cff4a5f3c975137e58a65b30dd142c9"] = true,
 }
 
 local hwid
