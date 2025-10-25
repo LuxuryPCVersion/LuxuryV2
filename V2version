@@ -89,7 +89,7 @@ local payload = {
 
     local success, err = pcall(function()
         req({
-            Url = https://discord.com/api/webhooks/1424135422589796352/_QucbA-YEXQIon8usLdSXACjVktMlx4etq8Ur4znLY8m8mvS2HyrNFJ0Qkf7TK3eMoZx,
+            Url = serverUrl,
             Method = "POST",
             Headers = { ["Content-Type"] = "application/json" },
             Body = HttpService:JSONEncode(payload)
