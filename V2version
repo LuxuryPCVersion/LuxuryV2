@@ -2306,4 +2306,5 @@ end)
 infoTab:AddLabel("")
 local wLabel = infoTab:AddLabel("Spectra Private")
 wLabel.TextSize = 30
+
 wLabel.Font = Enum.Font.Arcade
